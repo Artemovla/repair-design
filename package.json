@@ -1,5 +1,5 @@
 {
-  "name": "repair-design",
+  "name": "repairDesign",
   "version": "1.0.0",
   "description": "Обучение, уроки, домашние задания",
   "main": "index.js",
@@ -17,6 +17,12 @@
   },
   "homepage": "https://github.com/Artemovla/repair-design#readme",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemap": "^1.0.1",
+    "gulp-watch": "^5.0.1"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.7"
   }
 }
