@@ -328,8 +328,7 @@ template {
 
 .container {
   max-width: 1256px;
-  margin: auto;
-  border: 1px solid red; }
+  margin: auto; }
 
 .header {
   position: fixed;
