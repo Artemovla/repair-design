@@ -350,7 +350,7 @@ template {
   font-size: 1.125rem;
   color: #fff;
   padding: 0.42rem 0; }
-  .input::placeholder {
+  .input--light {
     color: #fff; }
 
 .policy__checkbox {
@@ -409,6 +409,8 @@ img {
     text-align: center; }
     .section-title--left {
       text-align: left; }
+    .section-title--light {
+      color: #fff; }
     .section-title__heading {
       font-family: 'Yeseva One', cursive;
       text-transform: uppercase;
@@ -590,6 +592,71 @@ img {
   background: #E3B873 url("../img/icons2.png") no-repeat center;
   border-radius: 6px; }
 
+.control__section-title {
+  margin-bottom: 1.9375rem;
+  margin-top: -30rem; }
+
+.control__video {
+  position: relative;
+  display: flex;
+  margin: auto;
+  margin-bottom: 3.875rem;
+  max-width: 51.0625rem;
+  min-height: 27.125rem;
+  background: #131313 url("../img/video-mask.jpg") no-repeat center;
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15); }
+  .control__video::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); }
+
+.control__text {
+  max-width: 35.6875rem;
+  margin: auto;
+  margin-bottom: 3.75rem;
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 1.875rem; }
+  .control__text::before {
+    content: '';
+    display: block;
+    margin: auto;
+    margin-bottom: 2.1875rem;
+    width: 55px;
+    height: 2px;
+    background-color: #E3B873;
+    border-radius: 30px; }
+
+.control__form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 48.125rem;
+  margin: auto; }
+
+.control__input-group {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%; }
+
+.control__label {
+  margin-bottom: -7px; }
+
+.control__button {
+  padding: 1.125rem 4.1875rem; }
+
+.control__policy {
+  flex-basis: 100%;
+  margin-top: 1.2rem; }
+  .control__policy-label {
+    justify-content: center; }
+
+.video__play {
+  position: relative;
+  margin: auto; }
+
 .types__section-title {
   margin-bottom: 2rem; }
 
@@ -680,6 +747,9 @@ img {
     margin-bottom: 2.375rem; }
   .modal__button {
     align-self: flex-end; }
+
+.projects {
+  padding-bottom: 30rem; }
 
 .swiper-slide {
   display: flex;
@@ -781,7 +851,24 @@ img {
   .hero__button {
     display: block;
     min-width: 22.86rem;
-    margin-bottom: 1.85rem; } }
+    margin-bottom: 1.85rem; }
+  .control__input-group {
+    width: 100%; }
+  .control__form {
+    display: flex;
+    flex-direction: column; }
+  .control__text {
+    margin-bottom: 0.5rem; }
+  .control__label {
+    margin-top: 4rem; }
+  .control__policy {
+    display: flex;
+    margin-top: 1.2rem; }
+  .control__button {
+    order: 3;
+    margin-top: 3.8rem; }
+  .policy__checkbox {
+    margin-left: -1rem; } }
 
 @media screen and (max-height: 540px) {
   .hero__scroll-down {
