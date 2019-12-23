@@ -45,7 +45,105 @@ $(document).ready(function () {
   	next.css('left', prev.width() + 10 + bullets.width() + 10)
 	bullets.css('left', prev.width() + 10)
 	  
-	new WOW().init();  
+	new WOW().init();
+
+//Validation forms
+// modal__form
+	$('.modal__form').validate({
+		errorClass: "invalid",
+		rules: {
+			// правило для одной строки (userName)
+			userName: {
+				required: true,
+				minlength: 2,
+				maxlength: 15
+			},
+			userPhone: {
+				required: true,
+				minlength: 11
+			},
+			// правило для одной строки (userEmail) с обязательным запросом/вводом Email
+			userEmail: {
+				required: true,
+				userPhone: true,
+				email: true
+			}
+		}, //сообщения
+		messages: {
+			userName: {
+				required: "Заполните поле",
+				minlength: "Имя должно быть не короче двух букв",
+				maxlength: "Имя должно содержать не более 15 букв"
+			}, 
+			userPhone: {
+				required: "Заполните поле",
+				minlength: "Номер телефона должен быть не короче 11 цифр"
+			},
+			userEmail: {
+				required: "Заполните поле",
+				email: "Введите корректный email"
+			},
+		}
+	});
+//control__form
+	$('.control__form').validate({
+		errorClass: "invalid",
+		rules: {
+			userName: {
+				required: true,
+				minlength: 2,
+				maxlength: 15
+			},
+			userPhone: {
+				required: true,
+				minlength: 11
+			}
+		},
+		messages: {
+			userName: {
+				required: "Заполните поле",
+				minlength: "Имя должно быть не короче двух букв",
+				maxlength: "Имя должно содержать не более 15 букв"
+			}, 
+			userPhone: {
+				required: "Заполните поле",
+				minlength: "Номер телефона должен быть не короче 11 цифр"
+			}
+
+		}
+	});
+	// footer__form
+	$('.footer__form').validate({
+		errorClass: "invalid",
+		rules: {
+			userName: {
+				required: true,
+				minlength: 2,
+				maxlength: 15
+			},
+			userPhone: {
+				required: true,
+				minlength: 11
+			},
+			userQuestion: "required"
+		},
+		messages: {
+			userName: {
+				required: "Заполните поле",
+				minlength: "Имя должно быть не короче двух букв",
+				maxlength: "Имя должно содержать не более 15 букв"
+			}, 
+			userPhone: {
+				required: "Заполните поле",
+				minlength: "Номер телефона должен быть не короче 11 цифр"
+			},
+			userQuestion: "Введите ваш вопрос"
+		}
+	});
+
+//маска для телефона
+$('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7(___) ___-__-__"});
+
 });
 
 //scrollup

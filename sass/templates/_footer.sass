@@ -1,0 +1,102 @@
+.footer
+  background: $dark url('../img/footer-bg.jpg') no-repeat center/cover
+  &__contacts
+    margin: auto
+    margin-top: 3.25rem
+    margin-bottom: 7rem
+    &__map
+      margin-top: 3rem
+    &__title
+      max-width: 36.875rem
+      max-height: 3.1875rem
+      margin: auto
+      font-family: 'Yeseva One', cursive
+      color: $primary
+      font-style: normal
+      font-weight: normal
+      font-size: 1.41rem
+      line-height: 1.75rem
+      text-align: center
+      text-transform: uppercase
+    &__socials
+      display: flex
+      justify-content: center
+      margin: auto
+      margin-top: 1.625rem
+      &__mail
+        display: flex
+        justify-content: center
+        width: 2rem
+        height: 2rem
+        border: 1px solid $primary
+        border-radius: 50%
+        background-color: $primary
+        color: $primary
+        margin-right: 0.688rem
+        &-icon
+          margin: auto
+      &__instagram
+        display: flex
+        justify-content: center
+        width: 2rem
+        height: 2rem
+        border: 1px solid $primary
+        border-radius: 50%
+        background-color: $primary
+        color: $primary
+        margin-left: 0.688rem
+        &-icon
+          margin: auto
+  &-policy
+	  &__checkbox
+		  opacity: 0
+		  visibility: hidden
+		  &:checked +
+			  .policy__label
+				  &::before
+					  background: $primary url('../img/check.svg') no-repeat center / 0.8rem
+  &-wrap
+    background-color: $dark 
+    max-width: 63rem
+    max-height: 31.5rem
+    margin: auto
+    padding: 2.1875rem
+    margin-top: -20rem
+  &__form
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    max-width: 32.5rem
+    margin: auto
+    &__title
+      text-transform: uppercase
+      font-family: 'Yeseva One', cursive
+      font-style: normal
+      font-weight: normal
+      font-size: 1.41rem
+      text-align: center
+      margin-bottom: 3.4125rem
+      margin-top: 0
+  &__input-group
+    display: flex
+    flex-direction: column
+    flex-basis: 45%
+    margin-bottom: 3.5rem
+    &--full-width
+      flex-basis: 100%
+      margin-bottom: 2rem
+  &__policy
+    flex-basis: 100%
+    margin-bottom: 3.6rem
+  &__button
+    margin: auto
+    padding: 1.225rem 4.5875rem
+  &__navbar
+    margin-bottom: -60px
+    margin-top: 2rem
+    width: 100%
+    background-color: $dark
+    padding: 2rem 0
+    
+      
+    
